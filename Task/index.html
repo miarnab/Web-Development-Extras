@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form id="loginform">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Enter Email" required>
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <br>
+        <label for="confirmpassword">Confirm Password: </label>
+        <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <div id="error">
+    </div>
+    <script type="text/javascript">
+        document.getElementById("loginform").addEventListener("submit",function(event){
+            event.preventDefault();
+            var nameInput = document.getElementById("name").value;
+            var emailInput = document.getElementById("email").value;
+            var passwordInput = document.getElementById("password").value;
+            var confirmpasswordInput = document.getElementById("confirmpassword").value;
+
+            const namePattern = /^[A-Za-z]+(?:\s[A-Za-z]+)*$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+            if(namePattern.test(nameInput) && emailPattern.test(emailInput) && passwordPattern.test(passwordInput) && passwordPattern.test(confirmpasswordInput) && passwordInput==confirmpasswordInput)
+            {
+                alert("Login Successful");
+            }
+            if(!namePattern.test(nameInput))
+            {
+                document.getElementById("error").innerHTML="Invalid Name";
+            }
+            if(!emailPattern.test(emailInput))
+            {
+                document.getElementById("error").innerHTML="Invalid Email";
+            }
+            if(!passwordPattern.test(passwordInput))
+            {
+                document.getElementById("error").innerHTML="Invalid Password";
+            }
+            if(!passwordPattern.test(confirmpasswordInput) || passwordInput!=confirmpasswordInput)
+            {
+                document.getElementById("error").innerHTML="Invalid Confirm Password or Passwords do not match";
+            }
+            
+            document.getElementById("loginform").reset();
+        });
+    </script>
+</body>
+</html>

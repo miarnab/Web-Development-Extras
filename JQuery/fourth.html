@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Page</title>
+    <script type="text/javascript" lang="javascript">
+        ( ($) => {
+            $(document).ready( () => {
+                var datas = $("form").serializeArray();
+                $.each(datas, function(i,field){
+                    $("#MyData").append(field.name+" - "+field.value+"<br/><br/>");
+                })
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <form>
+        First Name: <input type="text" name="First Name"/>
+        Last Name: <input type="text" name="Last Name"/>
+    </form>
+    <button>Submit to Show Values</button>
+    <div id="MyData"></div>
+</body>
+</html>

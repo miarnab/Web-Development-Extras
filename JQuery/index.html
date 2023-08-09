@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!--JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready( () => {
+            $("p").css("color","red");
+            $(".st1").css("background-color","yellow");
+            $("#p1").css("background-color","cyan");
+            $(":input");
+            $(":text");
+            $(":password");
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 class="st1">This is Heading Tag 1</h1>
+    <p id="p1">This is Paragraph Tag 2</p>
+    <p>This is Paragraph Tag 3</p>
+    <p>This is Paragraph Tag 4</p>
+    <p>This is Paragraph Tag 5</p>
+    <form>
+        name: <input type="text"/>
+        email: <input type="text"/>
+        password: <input  type="password"/>
+    </form>
+</body>
+</html>

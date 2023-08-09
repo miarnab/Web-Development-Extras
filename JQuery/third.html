@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+    <script>
+        (function($){
+            $(document).ready(()=>{
+                $("button").click(function(){
+                    $("form").html("<form><h1>Staff Login Form</h1>Staff ID: <input type='text'/>Password: <input type='password'/></form>");
+                })
+            })
+        })
+        
+    </script>
+</head>
+<button>Click here for Staff Login</button>
+<body>
+    <form><h1>Student Login Form</h1>Staff ID: <input type='text'/>Password: <input type='password'/><input type="submit" value="Submit"/></form>
+</body>
+</html>

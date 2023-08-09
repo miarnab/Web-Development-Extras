@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // var n=200;  //Global Variable
+        // function showmessage()
+        // {
+        //     // var num=10;  //Local Variable
+        //     // alert("Hello, Welcome");
+        //     return "Hello, Welcome."
+        // }
+        // var emp = new Object();
+        // emp.emp_id = 103;
+        // emp.emp_name = "Pandiyan";
+        // emp.emp_salary=35000;
+        // document.write("Employee ID: " +emp.emp_id+" Employee Name: "+emp.emp_name+" Salary: "+emp.emp_salary);
+        // var data1 = "Pandiyan";
+        // var data2 = new String("Ajay");
+        // document.write("Name 1: "+data1);
+        // document.write("<br/>Name 2: "+data2);
+        // document.write("<br/>Index of a: "+data1.indexOf('a'));
+        // document.write("<br/>Upper Case: "+data2.toUpperCase());
+        // var data1=['Pandiyan','Ajay','Ashok','Vimal','Vijay'];
+        // for(i=0;i<data1.length;i++)
+        // {
+        //     document.write(data1[i]+"<br/>");
+        // }
+        // var date = new Date();
+        // document.write("Current Date and Time: "+date);
+        // var day = date.getDate();
+        // var month = date.getMonth()+1;
+        // var year = date.getFullYear();
+        // var hour = date.getHours();
+        // var minute = date.getMinutes();
+        // var second = date.getSeconds();
+        // var milisecond = date.getMilliseconds();
+
+        // document.write("<br/>Date: "+day+"-"+month+"-"+year);
+        // document.write("<br/>Time: "+hour+"-"+minute+"-"+second+"-"+milisecond);
+        // function squareValue()
+        // {
+        //     var n=document.getElementsByName("number")[0].value;
+        //     //alert("Square Value: "+(n*n));
+        //     document.getElementById("answer").innerHTML=n*n;
+        // }
+        function count()
+        {
+            // var n = document.getElementsByName("lang");
+            // document.getElementById("answer").innerHTML=document.querySelectorAll('input[type="checkbox"]:checked').length;
+            var p = document.getElementsByTagName("p");
+            
+        }
+    </script>
+</head>
+<body>
+    <!-- <input type="button" value="Click" onclick="showmessage()"> -->
+    <!-- <script>
+        document.write(showmessage());
+    </script> -->
+    <!-- <form>
+        <label for="maths">Enter a number to find square value: </label>
+        <input type="text" id="number" name="number" placeholder="Enter a number">
+        <input type="button" value="Check Square" onclick="squareValue()">
+    </form>
+    <h1>The Square Value is <span id="answer"></span></h1> -->
+    <form>
+        <label for="checkcount">Select Checkboxes: </label>
+        <input type="checkbox" value="C" name="lang">C
+        <input type="checkbox" value="C++" name="lang">C++
+        <input type="checkbox" value="Java" name="lang">Java
+        <input type="checkbox" value="VB.Net" name="lang">VB.Net
+        <input type="checkbox" value="Python" name="lang">Python
+        <input type="checkbox" value="R" name="lang">R
+        <br/>
+        <input type="button" value="Total Languages Selected" onclick="count()">
+    </form>
+    <p>This is paragraph example</p>
+    <h1>Number of Checkboxes Checked: <span id="answer"></span></h1>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script>
+        $(document).ready( () => {
+            $("#hide").click( () => {
+                $("table").hide(3000);
+            });
+            $("#show").click( () => {
+                $("table").show(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <table align="center">
+        <caption>Results</caption>
+        <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Percent</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Arnab</td>
+            <td>90.20</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Prasanth</td>
+            <td>80.75</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>Parthivan</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>1004</td>
+            <td>Sathish</td>
+            <td>98.50</td>
+        </tr>
+    </table>
+    <div align="center">
+        <button id="hide">Hide Table</button>
+        <button id="show">Show Table</button>
+    </div>
+</body>
+</html>

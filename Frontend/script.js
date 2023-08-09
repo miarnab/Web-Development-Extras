@@ -1,0 +1,1 @@
+document.innerHTML(".heading")="Hello! Good Morning."
